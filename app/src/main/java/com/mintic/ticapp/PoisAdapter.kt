@@ -32,14 +32,16 @@ class PoisAdapter(private val poisList: ArrayList<PoisItem>) : RecyclerView.Adap
         private var txtNombre: TextView = itemView.findViewById(R.id.txtNombre)
         private var txtTemperatura: TextView = itemView.findViewById(R.id.txtTemperatura)
         private var txtPuntos: TextView = itemView.findViewById(R.id.txtPuntos)
+        private var txtDescription: TextView = itemView.findViewById(R.id.txtDescription)
         private var imagenPoi: ImageView = itemView.findViewById(R.id.imagenPoi)
         //Falta descripción
         fun bind(pois: PoisItem){
             txtNombre.text = pois.nombreLugar
-            txtTemperatura.text = pois.temperatura
-            txtPuntos.text = pois.puntuacion.toString()
+            txtTemperatura.text = "Temperatura: " + pois.temperatura
+            txtPuntos.text =  "Puntuación: " + pois.puntuacion.toString() + " Estrellas"
+            txtDescription.text = pois.descripcion.substring(0,60) + "..."
             //Falta descripción
-            //Picasso.get().load(pois.urlImagen).into(imagenPoi);
+            Picasso.get().load(pois.foto).into(imagenPoi);
         }
 
     }

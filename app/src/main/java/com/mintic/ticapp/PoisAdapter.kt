@@ -1,15 +1,18 @@
 package com.mintic.ticapp
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
+import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
 //Se hereda de recyclerview, se utiliza la propiedad adapter y se le pasa el viewholder encargado de pasar la información a poi
-class PoisAdapter(private val poisList: ArrayList<PoisItem>) : RecyclerView.Adapter<PoisAdapter.ViewHolder>(){
+class PoisAdapter(private val poisList: ArrayList<PoisItem>, val contexto: FragmentManager) : RecyclerView.Adapter<PoisAdapter.ViewHolder>(){
 
     //Este método es para definir el layout en el que se va a trabajar, retorna el viewholder con las vista(el layout)
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -20,8 +23,7 @@ class PoisAdapter(private val poisList: ArrayList<PoisItem>) : RecyclerView.Adap
     //Recibe un view holder y una posicion, hace un recorrido a la lista
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val pois = poisList[position]
-        holder.bind(pois)
-
+        holder.bind(pois, contexto)
     }
 
     override fun getItemCount(): Int {
@@ -34,16 +36,28 @@ class PoisAdapter(private val poisList: ArrayList<PoisItem>) : RecyclerView.Adap
         private var txtPuntos: TextView = itemView.findViewById(R.id.txtPuntos)
         private var txtDescription: TextView = itemView.findViewById(R.id.txtDescription)
         private var imagenPoi: ImageView = itemView.findViewById(R.id.imagenPoi)
+        private var poiCardView: CardView = itemView.findViewById(R.id.poi_cardView)
+
         //Falta descripción
-        fun bind(pois: PoisItem){
+        fun bind(pois: PoisItem, contexto: FragmentManager){
             txtNombre.text = pois.nombreLugar
             txtTemperatura.text = "Temperatura: " + pois.temperatura
             txtPuntos.text =  "Puntuación: " + pois.puntuacion.toString() + " Estrellas"
             txtDescription.text = pois.descripcion.substring(0,60) + "..."
             //Falta descripción
             Picasso.get().load(pois.foto).into(imagenPoi);
+            poiCardView.setOnClickListener {
+                clickView(contexto, pois)
+            }
         }
 
+        private fun clickView(contexto: FragmentManager, pois: PoisItem){
+            val transaction = contexto.beginTransaction()
+            val newFragment = Poi_info_completa(pois)
+            transaction.replace(R.id.main_container, newFragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
     }
 
 }

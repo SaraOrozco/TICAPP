@@ -42,10 +42,10 @@
             android:layout_weight="1"
             android:adjustViewBounds="true"
             android:background="#00DFFF"
-            android:padding="5dp"
+            android:padding="2dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@mipmap/ic_paisaje"
-            tools:srcCompat="@mipmap/ic_paisaje"/>
+            app:srcCompat="@drawable/poi_btn"
+            tools:srcCompat="@drawable/poi_btn"/>
 
         <ImageButton
             android:id="@+id/btnSetting"

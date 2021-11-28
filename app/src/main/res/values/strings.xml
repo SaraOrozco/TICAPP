@@ -9,4 +9,7 @@
     <string name="description">Cancún es una ciudad de México ubicada en la península de Yucatán que limita...</string>
     <string name="temp">Temperatura: 30°C</string>
     <string name="puntos">Puntuación: 4 estrellas</string>
+    <string name="titulo_poi">Puntos de intéres</string>
+    <string name="descripcion_poi">Descripción</string>
+    <string name="standard_title">Título</string>
 </resources>

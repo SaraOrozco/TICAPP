@@ -18,7 +18,7 @@ class ListPOIActivity : AppCompatActivity() {
         poisRecyclerView = findViewById(R.id.poi_recyclerview)
        // listpois = createMockPois()
         listpois = loadMockPoisFromJscon()
-        poisAdapter = PoisAdapter(listpois)
+
         //poisRecyclerView.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
         poisRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)

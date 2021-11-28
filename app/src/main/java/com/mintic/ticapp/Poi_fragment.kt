@@ -1,32 +1,37 @@
 package com.mintic.ticapp
 
+import android.content.Context
 import android.os.Bundle
+import android.os.Parcel
+import android.os.Parcelable
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.google.gson.Gson
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [Poi_fragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class Poi_fragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+class Poi_fragment() : Fragment() {
+    private lateinit  var listpois: ArrayList<PoisItem>
+    private lateinit var poisAdapter: PoisAdapter
+    private lateinit var poisRecyclerView: RecyclerView
+    private lateinit var frag: FragmentManager
+
+    constructor(parcel: Parcel) : this() {
+
+    }
+
+    constructor(listpois: ArrayList<PoisItem>, contexto: FragmentManager) : this() {
+        this.listpois = listpois
+        this.frag = contexto
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+
     }
 
     override fun onCreateView(
@@ -34,26 +39,19 @@ class Poi_fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.poi_fragment, container, false)
+        val view: View = inflater.inflate(R.layout.activity_list_poiactivity, container, false)
+
+        poisRecyclerView = view.findViewById(R.id.poi_recyclerview)
+        // listpois = createMockPois()
+        poisAdapter = PoisAdapter(listpois, frag)
+        //poisRecyclerView.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
+        poisRecyclerView.apply {
+            layoutManager = LinearLayoutManager(context)
+            adapter = poisAdapter
+            setHasFixedSize(false)
+        }
+        //poisRecyclerView.adapter = poisAdapter
+        return view
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Poi_fragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            Poi_fragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
 }

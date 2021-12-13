@@ -1,4 +1,4 @@
-package com.mintic.ticapp
+package com.mintic.ticapp.Modelos
 
 
 import com.google.gson.annotations.SerializedName

@@ -1,0 +1,87 @@
+{
+  "pois": [
+    {
+      "id": 1,
+      "foto": "https://www.mexicodesconocido.com.mx/wp-content/uploads/2010/05/chichen-itza-arquitectura-que-visitar-900x594.png",
+      "nombre_lugar": "Chichén Itzá",
+      "descripcion": "Este es un POI consumido desde el servicio web de myjsonserver. Un sitio de patrimonio mundial y el segundo sitio arqueológico más visitado de México por su inmensa importancia cultural. El lugar preferido por los visitantes es la pirámide Castillo que consta de de cuatro partes que contienen 365 escalones, 52 paneles y 18 terrazas. Es perfecto para hacer un tour guiado o recorrerlo por ti mismo.",
+      "puntuacion": 4,
+      "temperatura": "25°C"
+    },
+    {
+      "id": 2,
+      "foto": "https://rutaviajera.seguroparaviaje.com/wp-content/uploads/2020/08/%C2%BFTe-encantan-los-cenotes-Gui%CC%81a-para-encontrar-los-mejores-del-mundo-.jpg",
+      "nombre_lugar": "Los Cenotes",
+      "descripcion": "Cuevas llenas de agua y ríos subterráneos, situados en varias partes para que los explores.",
+      "puntuacion": 3,
+      "temperatura": "24°C"
+    },
+    {
+      "id": 3,
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Isla_Mujeres%2C_M%C3%A9xico.jpg/289px-Isla_Mujeres%2C_M%C3%A9xico.jpg",
+      "nombre_lugar": "Isla mujeres",
+      "descripcion": "En un fascinante y corto trayecto en ferri de solo 20 minutos de distancia se encuentra Isla Mujeres, toma un descanso de la ciudad y escápate a un mundo de relajación total; puedes alquilar un carrito de golf, una scooter o una bicicleta para recorrer esta hermosa isla. También puedes visitar el santuario de las tortugas.",
+      "puntuacion": 3,
+      "temperatura": "31°C"
+    },
+    {
+      "id": 4,
+      "foto": "https://musamexico.org/es/wp-content/uploads/sites/2/2018/07/la-jardinera-de-la-esperanza-jason-decaires-nizuc.jpg",
+      "nombre_lugar": "MUSA – Museo Subacuático de Arte",
+      "descripcion": "El museo más famoso de esculturas bajo el agua se encuentra en aquí, diseñado en respuesta al daño provocado en las zonas locales de arrecife. Este museo ofrece un refugio seguro para el crecimiento del coral en el que la vida marina puede vivir y reproducirse naturalmente. Podrás observar más de 400 esculturas de tamaño real si eres un gran buceador.",
+      "puntuacion": 4,
+      "temperatura": "28°C"
+    },
+    {
+      "id": 5,
+      "foto": "https://www.xcaretexperiencias.com/img/informacion-de-destino/tulum1.jpg",
+      "nombre_lugar": "Ruinas de Tulum",
+      "descripcion": "Considerado uno de los lugares más bellos de las ruinas mayas. Se encuentran ubicadas sobre un acantilado sobre las azules aguas del mar caribe, es una ciudad rica en historia y cultura.",
+      "puntuacion": 3,
+      "temperatura": "25°C"
+    },
+    {
+      "id": 6,
+      "foto": "https://www.xcaretexperiencias.com/img/xcaret/xcaret-parque-aerea.jpg",
+      "nombre_lugar": "Parque Xcaret",
+      "descripcion": "Una de las actividades turísticas para hacer es visitar el ecoparque temático Xcaret con más de 40 atracciones que ofrecen cultura, entretenimiento, comida tradicional del país y una gran cantidad de actividades para disfrutar.",
+      "puntuacion": 3,
+      "temperatura": "32°C"
+    },
+    {
+      "id": 7,
+      "foto": "https://live.staticflickr.com/49/127724884_5c30b9b087_b.jpg",
+      "nombre_lugar": "Mirador Playa Delfines",
+      "descripcion": "Los fines de semana esta llena de turistas y locales, pero es una playa enorme, por lo que siempre podrás encontrar un buen lugar para tirarte y disfrutar del mar. Además si viajas con niños, hay algunos juegos infantiles. El oleaje es un poco fuerte a veces, así que si no eres un nadador experimentado trata al mar con respeto. Se encuentra en el Kilómetro 19.5 del Boulevard Kukulkán, Zona Hotelera y la entrada es libre.",
+      "puntuacion": 4,
+      "temperatura": "33°C"
+    },
+    {
+      "id": 8,
+      "foto": "https://www.elcaminomascorto.es/wp-content/uploads/MG_2514-1024x654.jpg",
+      "nombre_lugar": "Zona Arqueológica El Rey",
+      "descripcion": "A unos 200 metros del Mirador de Playa Delfines se encuentra la entrada a la zona arqueológica de El Rey. La entrada es gratis para mexicanos con identificación oficial los domingos, y entre semana la entrada cuesta alrededor de 50 Pesos mexicanos (como 3 USD).  Es una zona arqueológica con varias estructuras pequeñas distribuidas a lo largo de unos 700 metros. En el interior hay una gran cantidad de iguanas, lo que resulta muy atractivo especialmente para los más pequeños.",
+      "puntuacion": 4,
+      "temperatura": "27°C"
+    },
+    {
+      "id": 9,
+      "foto": "https://traveler.marriott.com/es/wp-content/uploads/sites/2/2021/02/GI-884646886-Mexico-City-Angel-1920x1080.png",
+      "nombre_lugar": "Ciudad de México",
+      "descripcion": "En el lugar conocido como El Embarcadero, se encuentra una estructura giratoria de aproximadamente 100 metros de altura conocida como la Torre Escénica de Cancún. Ya sea de día, tarde o de noche, aquí tendrás una gran vista de parte de la zona hotelera de Cancún. Ideal para llevarte una bella postal a casa. La entrada cuesta aproximadamente 10 USD y el paseo en las alturas dura unos 15 minutos.",
+      "puntuacion": 3,
+      "temperatura": "20°C"
+    },
+    {
+      "id": 10,
+      "foto": "https://periodicoviaje.com/wp-content/uploads/2020/08/playa-del-carmen.jpg",
+      "nombre_lugar": "Playas del Carmen",
+      "descripcion": "Sobre el kilómetro 12.5 de la zona hotelera se encuentra el centro comercial La Isla Shopping Village mejor conocido como Plaza la Isla Cancún. Es un lugar lleno de tiendas, boutiques y restaurantes, que si bien, para el turismo mochilero tal vez no sea algo tan atractivo, lo que hay que ver son los espectaculares atardeceres del lado del muelle con el que cuenta la plaza.",
+      "puntuacion": 4,
+      "temperatura": "33°C"
+    }
+  ],
+  "profile": {
+    "name": "Elias0423"
+  }
+}

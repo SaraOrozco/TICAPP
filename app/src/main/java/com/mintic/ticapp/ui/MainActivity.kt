@@ -1,12 +1,15 @@
-package com.mintic.ticapp
+package com.mintic.ticapp.ui
 
 import android.content.Context
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageButton
-import androidx.fragment.app.FragmentManager
+import com.mintic.ticapp.LectorJson
+import com.mintic.ticapp.Lugar_fragment
+import com.mintic.ticapp.Modelos.PoisItem
+import com.mintic.ticapp.R
+import com.mintic.ticapp.ui.list.ListPoiFragment
+import com.mintic.ticapp.ui.preference.FragmentosPreferencias
 
 class MainActivity : AppCompatActivity() {
     lateinit var btnPoi: ImageButton
@@ -34,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         btnInfo.setBackgroundColor(resources.getColor(R.color.white))
 
         btnPoi.setOnClickListener {
-            clickBtnPoi(pois)
+            clickBtnPoi()
         }
 
         btnInfo.setOnClickListener {
@@ -46,10 +49,21 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun clickBtnPoi(pois: ArrayList<PoisItem>){
+    /*private fun clickBtnPoi(pois: ArrayList<PoisItem>){
         val transaction = supportFragmentManager.beginTransaction()
         var fragmentManager = supportFragmentManager
         val newFragment = Poi_fragment(pois, fragmentManager)
+        transaction.replace(R.id.main_container, newFragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
+        btnPoi.setBackgroundColor(resources.getColor(R.color.white))
+        btnInfo.setBackgroundColor(resources.getColor(R.color.ic_paisaje_background))
+        btnSetting.setBackgroundColor(resources.getColor(R.color.ic_paisaje_background))
+    }*/
+
+    private fun clickBtnPoi(){
+        val transaction = supportFragmentManager.beginTransaction()
+        val newFragment = ListPoiFragment()
         transaction.replace(R.id.main_container, newFragment)
         transaction.addToBackStack(null)
         transaction.commit()

@@ -1,9 +1,7 @@
-package com.mintic.ticapp
+package com.mintic.ticapp.ui.detail
 
-import android.content.Context
 import android.os.Bundle
 import android.os.Parcel
-import android.os.Parcelable
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -11,7 +9,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.gson.Gson
+import com.mintic.ticapp.Modelos.PoisItem
+import com.mintic.ticapp.R
+import com.mintic.ticapp.ui.PoisAdapter
 
 
 class Poi_fragment() : Fragment() {
@@ -39,7 +39,7 @@ class Poi_fragment() : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view: View = inflater.inflate(R.layout.activity_list_poiactivity, container, false)
+        val view: View = inflater.inflate(R.layout.fragment_list_poi, container, false)
 
         poisRecyclerView = view.findViewById(R.id.poi_recyclerview)
         // listpois = createMockPois()

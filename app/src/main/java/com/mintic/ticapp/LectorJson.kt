@@ -2,6 +2,8 @@ package com.mintic.ticapp
 
 import android.content.Context
 import com.google.gson.Gson
+import com.mintic.ticapp.Modelos.Pois
+import com.mintic.ticapp.Modelos.PoisItem
 
 class LectorJson {
 

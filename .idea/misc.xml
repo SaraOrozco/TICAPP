@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Mintic/TICAPP/app/src/main/res/layout/activity_list_poiactivity.xml" value="0.3582427536231884" />
+        <entry key="..\:/Mintic/TICAPP/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mintic/TICAPP/app/src/main/res/layout/fragment_list_poi.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mintic/TICAPP/app/src/main/res/layout/fragment_poi.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mintic/TICAPP/app/src/main/res/layout/fragment_poi_list.xml" value="0.35260416666666666" />
+        <entry key="..\:/Mintic/TICAPP/app/src/main/res/layout/layout_lugar_fragment.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mintic/TICAPP/app/src/main/res/layout/poi.xml" value="0.3582427536231884" />
+        <entry key="..\:/Mintic/TICAPP/app/src/main/res/layout/poi_fragment.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mintic/TICAPP/app/src/main/res/xml/preferencias_app.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/ander/OneDrive/Escritorio/Programacion/Android_Studio/TICAPP/app/src/main/res/drawable/ic_icons8_ajustes.xml" value="0.37083333333333335" />
+        <entry key="..\:/Users/ander/OneDrive/Escritorio/Programacion/Android_Studio/TICAPP/app/src/main/res/drawable/ic_icons8_ajustes__1_.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/ander/OneDrive/Escritorio/Programacion/Android_Studio/TICAPP/app/src/main/res/drawable/ic_informacion.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/ander/OneDrive/Escritorio/Programacion/Android_Studio/TICAPP/app/src/main/res/drawable/poi_btn.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/ander/OneDrive/Escritorio/Programacion/Android_Studio/TICAPP/app/src/main/res/layout/activity_list_poiactivity.xml" value="0.3546875" />
+        <entry key="..\:/Users/ander/OneDrive/Escritorio/Programacion/Android_Studio/TICAPP/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/ander/OneDrive/Escritorio/Programacion/Android_Studio/TICAPP/app/src/main/res/layout/layout_lugar_fragment.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/ander/OneDrive/Escritorio/Programacion/Android_Studio/TICAPP/app/src/main/res/layout/poi.xml" value="0.3546875" />
+        <entry key="..\:/Users/ander/OneDrive/Escritorio/Programacion/Android_Studio/TICAPP/app/src/main/res/layout/poi_fragment.xml" value="0.2936857562408223" />
+        <entry key="..\:/Users/ander/OneDrive/Escritorio/Programacion/Android_Studio/TICAPP/app/src/main/res/mipmap-anydpi-v26/ic_paisaje.xml" value="0.1203125" />
+        <entry key="..\:/Users/ander/OneDrive/Escritorio/Programacion/Android_Studio/TICAPP/app/src/main/res/xml/preferencias_app.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

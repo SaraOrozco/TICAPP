@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:background="#00dfff">
+
+        <ImageButton
+            android:id="@+id/btnInfoLugar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00dfff"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_informacion"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@drawable/ic_informacion"/>
+
+        <ImageButton
+            android:id="@+id/btnPoi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="#00DFFF"
+            android:padding="2dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/poi_btn"
+            tools:srcCompat="@drawable/poi_btn"/>
+
+        <ImageButton
+            android:id="@+id/btnSetting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="#00DFFF"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_icons8_ajustes__1_"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@drawable/ic_icons8_ajustes__1_"/>
+
+    </LinearLayout>
+
+</LinearLayout>

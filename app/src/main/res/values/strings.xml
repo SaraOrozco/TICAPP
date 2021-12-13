@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TICAPP</string>
+    <string name="title_informacion_general">Información general</string>
+    <string name="description_cancun">Cancún es una ciudad de México ubicada en la península de Yucatán que limita con el mar Caribe y que es conocida por sus playas, los numerosos centros turísticos y la vida nocturna. Se compone de 2 áreas distintas: el área del centro más tradicional y la Zona Hotelera, la franja costera con hoteles altos, clubes nocturnos, tiendas y restaurantes. Cancún también es un destino popular entre estudiantes durante el período de vacaciones universitarias en la primavera</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mexico">México</string>
+    <string name="cancun">Cancún</string>
+    <string name="description">Cancún es una ciudad de México ubicada en la península de Yucatán que limita...</string>
+    <string name="temp">Temperatura: 30°C</string>
+    <string name="puntos">Puntuación: 4 estrellas</string>
+    <string name="titulo_poi">Puntos de intéres</string>
+    <string name="descripcion_poi">Descripción</string>
+    <string name="standard_title">Título</string>
+</resources>

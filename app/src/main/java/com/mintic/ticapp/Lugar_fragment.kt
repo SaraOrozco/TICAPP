@@ -5,28 +5,21 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.LinearLayout
+import android.widget.TextView
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [Lugar_fragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class Lugar_fragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    lateinit var layoutMexico: LinearLayout
+    lateinit var txtMexico: TextView
+    lateinit var btnUbicacion: Button
+    lateinit var btnClima: Button
+    lateinit var btnTurismo: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+
     }
 
     override fun onCreateView(
@@ -37,23 +30,45 @@ class Lugar_fragment : Fragment() {
         return inflater.inflate(R.layout.layout_lugar_fragment, container, false)
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Lugar_fragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            Lugar_fragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        inicializar(view)
+
+
+        txtMexico.text = resources.getText(R.string.info_ubicacion_mexico)
+
+        btnUbicacion.setOnClickListener {
+            onClickBtnUbicacion()
+        }
+        btnClima.setOnClickListener {
+            onClickBtnClima()
+        }
+        btnTurismo.setOnClickListener {
+            onClickBtnTurismo()
+        }
+    }
+
+    private fun inicializar(view: View){
+        layoutMexico = view.findViewById(R.id.layout_info_mexico)
+        btnUbicacion = view.findViewById(R.id.btn_ubicacion_mexico)
+        btnClima = view.findViewById(R.id.btn_clima_mexico)
+        btnTurismo = view.findViewById(R.id.btn_turismo_mexico)
+        txtMexico = view.findViewById(R.id.txt_info_ubicacion_mexico)
+    }
+
+    private fun onClickBtnUbicacion(){
+        txtMexico.text = resources.getText(R.string.info_ubicacion_mexico)
+        layoutMexico.background = btnUbicacion.background
+    }
+
+    private fun onClickBtnClima(){
+        txtMexico.text = resources.getText(R.string.info_clima_mexico)
+        layoutMexico.background = btnClima.background
+    }
+
+    private fun onClickBtnTurismo(){
+        txtMexico.text = resources.getText(R.string.info_turismo_mexico)
+        layoutMexico.background = btnTurismo.background
     }
 }

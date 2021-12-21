@@ -12,4 +12,19 @@
     <string name="titulo_poi">Puntos de intéres</string>
     <string name="descripcion_poi">Descripción</string>
     <string name="standard_title">Título</string>
+    <string name="ubicacion_mexico">Ubicación</string>
+    <string name="info_ubicacion_mexico">Está ubicado en el continente Americano más exactamente en América del Norte. Limita al Norte con Estados Unidos de América, al Sur y Oeste con el océano Pacífico, al Este con el Golfo de México y el mar Caribe, y al Sureste con Guatemala y Belice.
+        México disfruta de una privilegiada ubicación geográfica que incide favorablemente en su variedad climática, así como en su biodiversidad. Esta ubicación resulta estratégica para el comercio internacional: comparte una extensa frontera con los Estados Unidos de América y a través de los Océanos Pacifico y Atlántico tiene acceso a los mercados europeos y asiáticos.</string>
+    <string name="clima_mexico">Clima</string>
+    <string name="info_clima_mexico">El clima de México es muy variado. El Trópico de Cáncer divide el país en zonas templadas
+        y tropicales. La tierra al norte del paralelo veinticuatro  experimenta temperaturas  más
+        bajas durante los meses de invierno. Al sur del  paralelo  veinticuatro, las temperaturas
+        son  bastante  constantes  durante  todo  el  año  y  varían  únicamente en función de la
+        elevación. El norte del país generalmente recibe menos precipitación que el sur.</string>
+    <string name="turismo">Turismo</string>
+    <string name="info_turismo_mexico">El turismo en México es una de las actividades económicas más importantes del país y es una de las mayores en el mundo.
+        Colocado en tercer lugar a nivel mundial en términos de llegadas de turistas internacionales, con 25.1 millones de visitantes en 2020.
+        Las atracciones turísticas de México lo son: las ruinas antiguas de la cultura mesoamericana, las ciudades coloniales y los complejos turísticos de la playa.
+        El clima templado del país junto con su herencia histórica cultural —la fusión de la cultura europea (particularmente la española) con la cultura mesoamericana— también
+        hacen de México un atractivo destino turístico a nivel mundial.</string>
 </resources>

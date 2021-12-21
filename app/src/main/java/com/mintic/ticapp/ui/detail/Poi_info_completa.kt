@@ -1,15 +1,19 @@
 package com.mintic.ticapp.ui.detail
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.os.Parcel
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import com.mintic.ticapp.Modelos.PoisItem
 import com.mintic.ticapp.R
+import com.mintic.ticapp.ui.list.ListPoiFragment
 import com.squareup.picasso.Picasso
 
 class Poi_info_completa() : Fragment() {
@@ -21,6 +25,7 @@ class Poi_info_completa() : Fragment() {
     lateinit var descripcion: TextView
     lateinit var temperatura: TextView
     lateinit var puntaje : TextView
+    lateinit var btnUbicacion : ImageButton
 
     constructor(parcel: Parcel) : this() {
 
@@ -45,6 +50,10 @@ class Poi_info_completa() : Fragment() {
         inicializar(view)
         ajustePoi()
 
+        btnUbicacion.setOnClickListener {
+            ubicacionGoogleMaps(pois)
+        }
+
         return view
     }
 
@@ -54,6 +63,7 @@ class Poi_info_completa() : Fragment() {
         descripcion = view.findViewById<TextView>(R.id.txtDescripcion)
         temperatura = view.findViewById<TextView>(R.id.txtTemperatura)
         puntaje = view.findViewById<TextView>(R.id.txtPuntuacion)
+        btnUbicacion = view.findViewById(R.id.btnUbicacion)
     }
 
     private fun ajustePoi(){
@@ -62,6 +72,18 @@ class Poi_info_completa() : Fragment() {
         descripcion.text = pois.descripcion
         temperatura.text = pois.temperatura
         puntaje.text = pois.puntuacion.toString() + " estrellas"
+    }
+
+    //   Abre la aplicación de Google Maps y coloca las coordenadas de la ubicación correspondiente.
+    private fun ubicacionGoogleMaps(poi:PoisItem){
+        val mapIntentUri = Uri.parse("geo:${poi.latitud},${poi.longitud}?z=15")
+        val mapIntent = Intent(Intent.ACTION_VIEW, mapIntentUri)
+        mapIntent.setPackage("com.google.android.apps.maps")
+        context?.let { it1 ->
+            mapIntent.resolveActivity(it1?.packageManager)?.let {
+                startActivity(mapIntent)
+            }
+        }
     }
 
 }

@@ -15,5 +15,9 @@ data class PoisItem(
     @SerializedName("puntuacion")
     val puntuacion: Int,
     @SerializedName("temperatura")
-    val temperatura: String
+    val temperatura: String,
+    @SerializedName("latitud")
+    val latitud: Double,
+    @SerializedName("longitud")
+    val longitud: Double
 )

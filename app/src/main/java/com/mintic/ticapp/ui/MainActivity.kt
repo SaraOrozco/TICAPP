@@ -4,6 +4,11 @@ import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MarkerOptions
 import com.mintic.ticapp.LectorJson
 import com.mintic.ticapp.Lugar_fragment
 import com.mintic.ticapp.Modelos.PoisItem
@@ -11,7 +16,7 @@ import com.mintic.ticapp.R
 import com.mintic.ticapp.ui.list.ListPoiFragment
 import com.mintic.ticapp.ui.preference.FragmentosPreferencias
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(){
     lateinit var btnPoi: ImageButton
     lateinit var btnInfo: ImageButton
     lateinit var btnSetting: ImageButton
@@ -93,6 +98,7 @@ class MainActivity : AppCompatActivity() {
         btnSetting.setBackgroundColor(resources.getColor(R.color.white))
         btnInfo.setBackgroundColor(resources.getColor(R.color.ic_paisaje_background))
     }
+
 }
 
 

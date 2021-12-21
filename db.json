@@ -3,7 +3,7 @@
     {
       "id": 1,
       "foto": "https://www.mexicodesconocido.com.mx/wp-content/uploads/2010/05/chichen-itza-arquitectura-que-visitar-900x594.png",
-      "nombre_lugar": "Chichén Itzá 1",
+      "nombre_lugar": "Chichén Itzá",
       "descripcion": "Este es un POI consumido desde el servicio web de myjsonserver. Un sitio de patrimonio mundial y el segundo sitio arqueológico más visitado de México por su inmensa importancia cultural. El lugar preferido por los visitantes es la pirámide Castillo que consta de de cuatro partes que contienen 365 escalones, 52 paneles y 18 terrazas. Es perfecto para hacer un tour guiado o recorrerlo por ti mismo.",
       "puntuacion": 4,
       "temperatura": "25°C",

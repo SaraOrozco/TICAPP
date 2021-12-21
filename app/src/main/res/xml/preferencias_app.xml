@@ -9,6 +9,7 @@
             android:title="Habilitar notificaciones"
             android:summary="Recibir notificaciones de la App"/>
         <SwitchPreference
+            android:dependency="notificaciones"
             android:defaultValue="false"
             android:key="sonido"
             android:title="Habilitar sonido"
